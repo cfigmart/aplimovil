@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">EjemploGoogleMaps</string>
-    <string name="title_activity_maps">Mapa</string>
-    <string name="boton_ingresar">Ingresar</string>
-</resources>
