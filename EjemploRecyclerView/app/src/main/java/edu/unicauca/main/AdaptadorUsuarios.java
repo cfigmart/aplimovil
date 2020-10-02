@@ -1,4 +1,4 @@
-package edu.unicauca.ejemplorecyclerview;
+package edu.unicauca.main;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,10 +28,10 @@ public class AdaptadorUsuarios extends RecyclerView.Adapter<AdaptadorUsuarios.Vi
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolderUsuario holder, int position) {
-        holder.tvNombre.setText(listaUsuarios.get(position).getNombre());
-        holder.tvDescripcion.setText(listaUsuarios.get(position).getDescripcion());
+        holder.tvNombre.setText(getListaUsuarios().get(position).getNombre());
+        holder.tvDescripcion.setText(getListaUsuarios().get(position).getDescripcion());
 
-        int value = getImageResource(listaUsuarios.get(position).getFoto());
+        int value = getImageResource(getListaUsuarios().get(position).getFoto());
         holder.ivFoto.setImageResource(value);
 
     }
@@ -66,7 +66,7 @@ public class AdaptadorUsuarios extends RecyclerView.Adapter<AdaptadorUsuarios.Vi
 
     @Override
     public int getItemCount() {
-        return listaUsuarios.size();
+        return getListaUsuarios().size();
     }
 
     public class ViewHolderUsuario extends RecyclerView.ViewHolder {
@@ -80,5 +80,11 @@ public class AdaptadorUsuarios extends RecyclerView.Adapter<AdaptadorUsuarios.Vi
             tvDescripcion = itemView.findViewById(R.id.idDescripcion);
             ivFoto = itemView.findViewById(R.id.idImagen);
         }
+    }
+
+    public ArrayList<Usuario> getListaUsuarios() {
+        if (listaUsuarios == null)
+            return new ArrayList<Usuario>();
+        return listaUsuarios;
     }
 }

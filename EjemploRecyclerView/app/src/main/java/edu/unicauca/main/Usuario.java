@@ -1,4 +1,4 @@
-package edu.unicauca.ejemplorecyclerview;
+package edu.unicauca.main;
 
 public class Usuario {
     private String nombre;
