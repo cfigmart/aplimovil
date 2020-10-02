@@ -1,3 +1,3 @@
-# Ejemplos de clase de Aplimovil de la Tecnología en Telemática 
+# Ejemplos de clase de Aplimovil Universidad del Cauca
 > Estos ejemplos fueron desarrollados para la cohorte 2020-1
 
