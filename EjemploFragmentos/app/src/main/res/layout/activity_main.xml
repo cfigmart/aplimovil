@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/contenedorFragment"
+        android:layout_width="408dp"
+        android:layout_height="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenedorFragment"
+        app:rowCount="1"
+        app:columnCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardContactos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:onClick="onClick"
+            >
+
+            <ImageView
+                android:id="@+id/imageContactos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/contacts"
+                android:contentDescription="@string/str_frag_contactos"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMusica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:onClick="onClick"
+            >
+
+            <ImageView
+                android:id="@+id/imageMusica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/music"
+                android:contentDescription="@string/str_frag_music"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardInformacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:onClick="onClick"
+            >
+
+            <ImageView
+                android:id="@+id/imageInformacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/information"
+                android:contentDescription="@string/str_frag_info"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EjemploFragmentos</string>
+    <string name="hello_blank_fragment">Hola bienvenido al fragemento</string>
+    <string name="str_frag_contactos">Hola bienvenido al fragmento Contactos</string>
+    <string name="str_frag_info">Hola bienvenido al fragmento Información</string>
+    <string name="str_frag_music">Hola bienvenido al fragmento Musica</string>
+</resources>
