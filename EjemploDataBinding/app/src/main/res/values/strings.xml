@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjemploRecyclerView</string>
+    <string name="contact_name">Nombre</string>
+    <string name="contact_desc">Descripción</string>
+</resources>

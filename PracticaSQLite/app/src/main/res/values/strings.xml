@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SQLiteMenuInflaterSample</string>
+    <string name="register_title">Register</string>
+    <string name="search_title">Search</string>
+    <string name="register_action">Create User</string>
+    <string name="search_action">Search User</string>
+    <string name="id_hint">Enter ID</string>
+    <string name="name_hint">Enter Name</string>
+    <string name="phone_hint">Enter Phone Number</string>
+    <string name="name_text">Name</string>
+    <string name="phone_text">Phone</string>
+    <string name="id_text">ID</string>
+    <string name="db_error">DB connection error</string>
+</resources>
