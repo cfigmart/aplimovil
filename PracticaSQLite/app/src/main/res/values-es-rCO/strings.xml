@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PracticaSQLiteMenuInflater</string>
+    <string name="register_title">Registrar</string>
+    <string name="search_title">Buscar</string>
+    <string name="register_action">Crear Usuario</string>
+    <string name="search_action">Consultar Usuario</string>
+    <string name="id_hint">Ingrese el ID</string>
+    <string name="name_hint">Ingrese el Nombre</string>
+    <string name="phone_hint">Ingrese el Teléfono</string>
+    <string name="name_text">Nombre</string>
+    <string name="phone_text">Teléfono</string>
+    <string name="id_text">ID</string>
+    <string name="db_error">Error en la conexión con la base de datos</string>
+</resources>
